@@ -1,0 +1,147 @@
+.home{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+/* section:first-child{
+    align-content: start;
+} */
+.discription{
+   /* margin-top: 20px; */
+   /* min-width: 600px; */
+   padding: 10px;
+   max-width: 600px;
+   /* flex: 0.5; */
+   display: flex;
+   flex-direction: column;
+   /* gap: 10px; */
+}
+.discription p{
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.discription .qualification{
+   font-size: 3rem;
+   font-family: 'Abril Fatface', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+.discription .title{
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface', cursive;
+    align-items: center;
+    /* justify-content: space-between; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+span.red{
+    color: var(--third-color);
+    font-weight: 900;
+}
+
+.discription .title span.red{
+    
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Babylonica', cursive;
+}
+.buttons{
+    display: flex;
+    gap: 25px;
+    margin-top: 45px;
+}
+.discription button {
+    width: fit-content;
+    cursor: pointer;
+    width: 180px;
+    padding: 13px 22px;
+    border-radius: 12px;
+    font-size: 1.09rem;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+}
+.discription button:hover{
+    scale: 1.1;
+}
+.buttons button.red{
+    background-color: var(--third-color);
+    color: white;
+}
+.buttons button.white{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--third-color);
+}
+
+
+.profile-pic{
+    /* flex: 0.5; */
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: visible;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    
+}
+
+@media (max-width: 1120px) {
+    .discription{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .discription .title{
+        place-self: center;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 850px) {
+    .home{
+        margin-top: 0;
+    }
+    .discription .qualification {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1220px) {
+    
+    .discription{
+        width: 100%;
+       align-items: center;
+    }
+    .discription .title{
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 412px) {
+    .buttons{
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 20px;
+        width: 90%;
+    }
+    .discription button {
+        width: 100%;
+    }
+    .profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+}

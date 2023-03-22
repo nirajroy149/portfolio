@@ -1,0 +1,14 @@
+.connect-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.connect-container a{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.connect-container a:hover{
+    scale: 0.9;
+}
